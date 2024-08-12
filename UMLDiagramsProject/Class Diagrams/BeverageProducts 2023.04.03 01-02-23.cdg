@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="BeverageProducts">
+  <ClassDiagramComponents>
+    <Class name="Product" package="beverageproducts" visibility="public" xPosition="44.0" yPosition="219.0">
+      <Fields>
+        <Field name="productID" type="int" visibility="private"/>
+        <Field name="productName" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="beverage" type="String" visibility="private"/>
+        <Field name="picture" type="BufferedImage" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="productID"/>
+          <Argument type="String" name="productName"/>
+          <Argument type="double" name="price"/>
+          <Argument type="String" name="beverage"/>
+          <Argument type="BufferedImage" name="picture"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getProductID" returnType="int" visibility="public"/>
+        <Method name="setProductID" returnType="void" visibility="public">
+          <Argument type="int" name="productID"/>
+        </Method>
+        <Method name="getProductName" returnType="String" visibility="public"/>
+        <Method name="setProductName" returnType="void" visibility="public">
+          <Argument type="String" name="productName"/>
+        </Method>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getBeverage" returnType="String" visibility="public"/>
+        <Method name="setBeverage" returnType="void" visibility="public">
+          <Argument type="String" name="beverage"/>
+        </Method>
+        <Method name="getPicture" returnType="BufferedImage" visibility="public"/>
+        <Method name="setPicture" returnType="void" visibility="public">
+          <Argument type="BufferedImage" name="picture"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="hashCode" returnType="int" visibility="public"/>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProjectUtil" package="beverageproducts" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getBufferedImageFromIcon" returnType="BufferedImage" visibility="public" isStatic="true">
+          <Argument type="ImageIcon" name="icon"/>
+        </Method>
+        <Method name="getIconFromBufferedImage" returnType="ImageIcon" visibility="public" isStatic="true">
+          <Argument type="BufferedImage" name="img"/>
+          <Argument type="int" name="width"/>
+          <Argument type="int" name="height"/>
+        </Method>
+        <Method name="getByteArrayFromBufferedImage" returnType="byte[]" visibility="public" isStatic="true">
+          <Argument type="BufferedImage" name="picture"/>
+        </Method>
+        <Method name="verifyDouble" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="verifyInteger" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="s"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SearchProduct" package="beverageproducts" visibility="public" xPosition="843.0" yPosition="20.0">
+      <Fields>
+        <Field name="conn" type="Connection" visibility="package"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton6" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField3" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField4" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField5" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField6" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField7" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField8" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="connectDB" returnType="void" visibility="package"/>
+        <Method name="setTableFromResultSet" returnType="void" visibility="package">
+          <Argument type="ResultSet" name="rs"/>
+        </Method>
+        <Method name="getProductFromUI" returnType="Product" visibility="package"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField6ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTable1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jButton6ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField6CaretUpdate" returnType="void" visibility="private">
+          <Argument type="javax.swing.event.CaretEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="beverageproducts.SearchProduct" target="beverageproducts.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
